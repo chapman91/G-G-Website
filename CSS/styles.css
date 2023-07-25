@@ -1,0 +1,443 @@
+/* The following are the different css variable sections: 
+
+1. Color Custom Properties
+2. Color Custom Properties (RGB Values)
+3. Font Custom Properties
+4. Background and Body Custom Properties
+5. Other Custom Properties
+6. button on hover   */
+
+
+/* ---------------------Colors--Font-----------------*/
+
+:root {
+    /* Bootstrap Colors */
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+  
+    /* RGB Values */
+    --bs-primary-rgb: 13,110,253;
+    --bs-secondary-rgb: 108,117,125;
+    --bs-success-rgb: 25,135,84;
+    --bs-info-rgb: 13,202,240;
+    --bs-warning-rgb: 255,193,7;
+    --bs-danger-rgb: 220,53,69;
+    --bs-light-rgb: 248,249,250;
+    --bs-dark-rgb: 33,37,41;
+    --bs-white-rgb: 255,255,255;
+    --bs-black-rgb: 0,0,0;
+    --bs-body-color-rgb: 33,37,41;
+    --bs-body-bg-rgb: 255,255,255;
+  
+    /* Additional Colors */
+    --white-color: #ffffff;
+    --primary-color: #7cb8eb;
+    --secondary-color: #4f83d1;
+    --section-bg-color: #f0f8ff;
+    --custom-btn-bg-color: #4f83d1;
+    --custom-btn-bg-hover-color: #7cb8eb;
+    --dark-color: #000000;
+    --p-color: #717275;
+    --border-color: #e9eaeb;
+    --link-hover-color: #4f83d1;
+  }
+  
+  /* Font */
+  :root {
+    --body-font-family: 'Poppins', sans-serif;
+    --h1-font-size: 52px;
+    --h2-font-size: 46px;
+    --h3-font-size: 32px;
+    --h4-font-size: 28px;
+    --h5-font-size: 24px;
+    --h6-font-size: 22px;
+    --p-font-size: 16px;
+    --btn-font-size: 18px;
+    --copyright-font-size: 14px;
+    --border-radius-large: 100px;
+    --border-radius-medium: 20px;
+    --border-radius-small: 10px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+  }
+  
+  /* Body */
+  :root {
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    font-family: var(--body-font-family);
+    background-color: var(--bs-body-bg);
+  }
+  
+  /* Other */
+  :root {
+    --btn-font-size: 18px;
+    --border-color: #e9eaeb;
+  }
+  
+  /* Padding */
+  :root {
+    --padding-top: 100px;
+    --padding-bottom: 100px;
+  }
+  
+  /* Background */
+  :root {
+    --background-color: var(--section-bg-color);
+  }
+  
+
+
+ /* Removing Horizantal Scroll */
+
+  body {
+    overflow-x: hidden;
+  }
+  
+/*---------------------
+       NAVBAR
+---------------------*/
+
+
+ .navbar {
+   position: relative;
+   width: 100%;
+ }
+
+ .navbar-nav .nav-item:hover { 
+   color: rgba(46, 34, 178, 0.2);
+   font-weight: bolder; 
+ }
+
+ .sticky-top {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+ }
+
+ 
+
+
+ /* CONTENT ON BACKGROUND */
+
+ .custom-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  padding: 40px;
+  color: white;
+  z-index: 1;
+}
+ 
+
+.container-fluid {
+  position: relative;
+  padding: 0; /* Remove default padding to ensure full-width image */
+}
+
+.back img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0; /* Ensure the overlay is behind the content */
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the content is above the overlay */
+  color: white;
+} 
+
+/*animation effect*/
+ .name {
+  color: white;
+}
+
+/* Apply the animation */
+.name.yellow {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: yellow; /* Starting color (yellow) */
+  }
+  100% {
+    color: transparent; /* Ending color (black) */
+  }
+}
+
+/* TRANSITION SHORTHAND CSS SYNTAX
+
+
+div {
+  transition: <property> <duration> <timing-function> <delay>;
+} 
+
+
+
+*/
+/*CONTACT FOR STYLES */
+
+  /* Basic styling for the contact form */
+  .contact-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: none;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  /* Basic styling for the thank-you page */
+  .thank-you {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+ 
+
+
+
+
+/*THE BUSINESS HOURS*/
+
+
+.section {
+display: flex; 
+gap: 1rem;
+max-width: 700px;
+margin: 2rem auto; 
+/* other styles */
+}
+
+/*flex-direction: column; 
+align-items: center;*/
+
+.section {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+/**/
+.section_item {
+flex: 1;
+}
+
+
+/* Mobile size- fix later!!!
+
+
+.section {
+display: flex;
+flex-direction: column;
+} */
+
+
+
+/*Adding The Separator*/
+
+.section:before {
+content: "";
+border: 1px solid #d3d3d3;
+align-self: stretch;
+}
+
+.section_item--start {
+order: -1;
+}
+
+/*fit on different screen size*/
+
+@media (mid-width : 700px) {
+.section {
+ align-items: center;
+ flex-direction: row; /*big screen*/
+}
+}
+
+
+/*---------------------------------------
+  SERVICES              
+-----------------------------------------*/
+
+
+
+/* Custom CSS styles */
+body {
+  background-color: #f2f7ff; /* Light blue background */
+  color: #333; /* Dark text color */
+}
+
+h1 {
+  color: #03619c; /* Ocean blue heading color */
+}
+
+.card {
+  border: 1px solid #03619c; /* Ocean blue border for cards */
+}
+
+.card-title {
+  color: #03619c; /* Ocean blue title color */
+}
+
+.card-text {
+  color: #555; /* Dark gray text color */
+}
+
+/* Additional styles for the "Read More" buttons */
+.btn-primary {
+  background-color: #03619c; /* Ocean blue button background */
+  border-color: #03619c; /* Ocean blue button border color */
+}
+
+
+/* ABOUT US */
+
+.contact {
+  padding: 8rem;
+}
+
+
+/* Expand Message Box*/
+.container .contact .form {
+ width:95%;
+}
+
+.contact .form h2{
+  font-size: 2rem;
+  color: #212529;
+  padding-bottom: 10px;
+  width: 100%;
+} 
+
+.contact .form .submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/* What effect does this declaration have? */
+
+.contact .form .submit input {
+  width:100%;
+}
+
+  
+
+.container .row .col-md-6 .contact .form .submit input, .contact .form .submit textarea{
+  width: 100%;
+  padding: 15px;
+  border:1px solid #95a5a6;
+  outline: none;
+  margin: 13px 0;
+}
+
+
+.container .row .col-md-6 .contact .form .submit input, .contact .form .submit textarea:focus {
+  border: 1px solid #111;
+}
+
+.container .row .col-md-6 .contact .form .submit input::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+
+.contact .form .submit textarea::placeholder {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  height: 80%;
+
+}
+
+.contact .form .submit a{
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  background: #111;
+  color: #fff;
+  text-align: center;
+
+}
+
+.container.contact .map {
+  width: 45%;
+}
+
+/* 
+
+
+
+
+
+
+
+
+*/

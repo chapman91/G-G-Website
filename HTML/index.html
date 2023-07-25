@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>G&G Power Washing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="../CSS/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+ <!--------------------
+      NAV-BAR
+  --------------------> 
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../images/bzzcsbvn.jpg" alt="G&G" width="80">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<!------------------
+    BACKGROUND
+ ------------------->
+
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="back">
+        <img src="../../images/workmanpressurewashing.jpg" alt="Background" width="100%">
+        <div class="overlay"></div>
+        <!-- Content to overlay on image-->
+        <div class="col text-center overlay-content">
+          <p>We're here for you, serving Birmingham, AL, and nearby areas</p>
+          <h2>TRANSFORM YOUR <span class="name" id="name">SPACE</span> WITH G&G PRESSURE WASHING!</h2>
+          <div class="button">
+            <a class="btn btn-primary" href="#">Free Quote</a>
+            <!-- Contact Form -->
+    <div class="contact-form-container">
+     <form action="submit.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="service">Pressure Washing Service :</label>
+    <select id="service" name="service">
+      <option value="option1">Residential</option>
+      <option value="option2">Commercial</option>
+      <option value="option3">Deck and Patio</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!-- Thank You Page (Hidden Initially) -->
+<div class="thank-you" style="display: none;">
+  <h2>Thank You!</h2>
+  <p>Your message has been sent. We'll get back to you soon.</p>
+</div>
+
+            <a class="btn btn-outline-primary" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<!-----------------
+   SPLIT SECTION
+  ----------------->
+
+<section class="section">
+  <div class="section_item section_item--start">
+   <!-- Content -->
+   <h3>New to G&amp;G Services?</h3>
+        <h6>Your membership is up to two months free ($50.00 per month)</h6>
+        <p>Write something about paid membership and one-time purchases</p>
+        <a href="#">Become a member today</a>
+
+  </div>
+
+  <div class=" section_item section_item--end">
+    <!--Content -->
+    <h3>Working Hours</h3>
+    <br>
+    <h5>Sunday: Closed</h5>
+    <h5>Monday - Friday</h5>
+    <p>7:00 AM - 10:00 PM</p>
+    <br>
+    <h5>Saturday: Opened</h5>
+    <p>7:00 AM - 9:00 PM</p>
+  </div>
+
+</section>
+
+
+
+<!------------------
+  SERVICES SECTION
+ ------------------>
+  <section class="services-section">
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Pressure Washing Services</h1>
+      <!-- Service Cards -->
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Residential Pressure Washing</h5>
+              <p class="card-text">We offer top-notch pressure washing services for residential properties. Say goodbye to dirt and grime and enjoy a clean and beautiful home.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Commercial Pressure Washing</h5>
+              <p class="card-text">Our professional pressure washing services can revitalize your commercial property, making a lasting impression on your clients and customers.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Deck and Patio Cleaning</h5>
+              <p class="card-text">Bring your deck or patio back to life with our specialized cleaning services. We'll make sure it looks as good as new.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more service cards as needed -->
+      </div>
+    </div>
+  </section>
+
+
+
+         
+<!-------------------
+     ABOUT US
+-------------------->
+
+<!-- FIRST -->
+
+<div class="container">
+    <h1 class="text-center p-5 mb-5 mt-5">Experienced Alabama Pressure Washing Services!</h1>
+
+    <div class="w-100 bg-dark-subtle p-5 mb-5">
+        <p>Introducing Alabama's Premier Pressure Washing Services! At our company, 
+            we take pride in delivering top-notch pressure washing solutions tailored 
+            to meet your needs. With years of experience in the industry, we have perfected 
+            our craft and earned a reputation for excellence throughout Alabama. Whether it's 
+            revitalizing your home's exterior, rejuvenating your driveway, or restoring the beauty 
+            of your deck, our skilled team utilizes advanced equipment and eco-friendly techniques to ensure outstanding results.
+             We are committed to exceeding your expectations with our attention to detail, professionalism, and dedication to customer satisfaction.
+              Discover the transformative power of our pressure washing services and experience the difference firsthand. Trust us to breathe new life into your surfaces and leave them looking immaculate. 
+              Get in touch today for a free quote and let us unleash the true potential of your property! </p>
+              <button type="button" class="btn btn-primary btn-lg">Get a Free Quote!</button>
+    </div>
+</div>
+
+<!-- SECOND -->
+
+
+
+<!----------------------
+    CONTACT FORM
+------------------------>
+
+<div class="container">
+  <!-- ROW -->
+  <div class="row">
+    <!--COLUMN-->
+    <div class="col-md-6">
+      <!-- Your contact form code goes here -->
+  <div class="contact">
+  <div class="form">
+    <h2> Feel free to ask anything</h2>
+    <div class="submit">
+      <input type="text" name="" placeholder="Name">
+      <input type="email" name="" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <a href="#"> Sent Message</a>
+    </div>
+  </div>
+
+
+
+</div>
+
+    </div>
+    <div class="col-md-6">
+      <!-- Your map code goes here -->
+       <div class="map">
+        <h2>Where you can find us</h2>
+        <p> <br> <i class="fas fa-map-marker-alt"></i>Birmingham, AL</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851423.9301178957!2d-87.50818153891636!3d33.53064253659021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888911df5885bfd3%3A0x25507409eaba54ce!2sBirmingham%2C%20AL!5e0!3m2!1sen!2sus!4v1689995341904!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+    
+    </div>
+  </div>
+</div>
+
+<script src="../Javascript/project1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+  </body> 
+  
+  </html>
