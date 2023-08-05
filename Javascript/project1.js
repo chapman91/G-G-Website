@@ -8,21 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
 // Changes Yellow words on content section
 const freeQuoteBtn = document.querySelector('.container-fluid .back .button .btn-primary');
 freeQuoteBtn.addEventListener('click', function () {
   this.classList.toggle('active');
 });
 
-
-
 // Your JavaScript code
 const nameElement = document.getElementById("name");
 const names = ["OFFICE", "HOUSE"]; // Array of names to cycle through
 let currentIndex = 0; // Current index in the names array
-
 
 // Function to change the name and apply the yellow color class
 function changeNameAndColor() {
@@ -34,11 +29,9 @@ function changeNameAndColor() {
 // Call the function repeatedly every 3 seconds
 setInterval(changeNameAndColor, 3000); // Change the name and color every 3 seconds
 
-
-
-
 // Select the elements with the unique "slide-in" class names
-const elements = document.querySelectorAll('#slideInFromTop, #slideInFromBottom, #slideInFromLeft, #slideInFromRight, #slideInFromLeft2');
+// qxeenolight was here :p -->added and changed ids to selector list below
+const elements = document.querySelectorAll('#top, #bottom, #bottom2, #left, #right, #left2');
 
 // Function to check if an element is in the viewport
 function isElementInViewport(element) {
@@ -65,4 +58,5 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 // Call the function once on page load to initialize the animations for visible elements
-handleScroll();
+// qxeenolight was here :p --> commented out call to function below
+// handleScroll();
