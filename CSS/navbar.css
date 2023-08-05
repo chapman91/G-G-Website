@@ -1,0 +1,21 @@
+ 
+/*---------------------
+       NAVBAR
+---------------------*/
+
+
+.navbar {
+    position: relative;
+    width: 100%;
+  }
+ 
+  .navbar-nav .nav-item:hover { 
+    color: rgba(46, 34, 178, 0.2);
+    font-weight: bolder; 
+  }
+ 
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}

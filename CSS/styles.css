@@ -121,29 +121,7 @@
   body {
     overflow-x: hidden;
   }
-  
-/*---------------------
-       NAVBAR
----------------------*/
-
-
- .navbar {
-   position: relative;
-   width: 100%;
- }
-
- .navbar-nav .nav-item:hover { 
-   color: rgba(46, 34, 178, 0.2);
-   font-weight: bolder; 
- }
-
- .sticky-top {
-   position: sticky;
-   top: 0;
-   z-index: 1000;
- }
-
- 
+   
 
 
  /* CONTENT ON BACKGROUND */
@@ -209,17 +187,8 @@
   }
 }
 
-/* TRANSITION SHORTHAND CSS SYNTAX
 
-
-div {
-  transition: <property> <duration> <timing-function> <delay>;
-} 
-
-
-
-*/
-/*CONTACT FOR STYLES */
+/*CONTACT FORM STYLES */
 
   /* Basic styling for the contact form */
   .contact-form-container {
@@ -258,11 +227,6 @@ div {
 
 
 
- 
-
-
-
-
 /*THE BUSINESS HOURS*/
 
 
@@ -289,16 +253,6 @@ flex: 1;
 }
 
 
-/* Mobile size- fix later!!!
-
-
-.section {
-display: flex;
-flex-direction: column;
-} */
-
-
-
 /*Adding The Separator*/
 
 .section:before {
@@ -321,13 +275,10 @@ order: -1;
 }
 
 
-/*---------------------------------------
+/*-------------------------
   SERVICES              
------------------------------------------*/
+---------------------------*/
 
-
-
-/* Custom CSS styles */
 body {
   background-color: #f2f7ff; /* Light blue background */
   color: #333; /* Dark text color */
@@ -339,6 +290,12 @@ h1 {
 
 .card {
   border: 1px solid #03619c; /* Ocean blue border for cards */
+}
+
+.card-img-top {
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: cover; /* Resize the images to cover the container, maintaining aspect ratio */
+  padding: 10px; /* Add some padding around the images */
 }
 
 .card-title {
@@ -355,39 +312,6 @@ h1 {
   border-color: #03619c; /* Ocean blue button border color */
 }
 
-
-/* ABOUT US */
-
-.contact {
-  padding: 8rem;
-}
-
-
-/* Expand Message Box*/
-.container .contact .form {
- width:95%;
-}
-
-.contact .form h2{
-  font-size: 2rem;
-  color: #212529;
-  padding-bottom: 10px;
-  width: 100%;
-} 
-
-.contact .form .submit {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-
-/* What effect does this declaration have? */
-
-.contact .form .submit input {
-  width:100%;
-}
 
   
 
@@ -410,12 +334,50 @@ h1 {
 }
 
 
+
+/* TESTIMONIAL SECTION */
+
+ .testimonial-section {
+      background-color: #f9f9f9;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .testimonial-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+    }
+
+    .testimonial-card .customer-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+
+/* CONTACT FORM AND MAP */
+
+.contact .form {
+  width: 90%;
+}
+
+.contact .form h2{
+  font-size: 2rem;
+}
+
 .contact .form .submit textarea::placeholder {
   color: #7f8c8d;
   font-size: 1.1rem;
   height: 80%;
 
 }
+
 
 .contact .form .submit a{
   width: 100%;
@@ -427,17 +389,91 @@ h1 {
 
 }
 
-.container.contact .map {
+.container .row .col-md-6 .map {
   width: 45%;
+  margin-top: 10%;
 }
 
-/* 
+
+/* ANIMATION SLIDE IN STYLES */
+
+/* Set initial state of elements */
+.slide-in-from-top {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8); /* Initial position with slight scaling */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Define slide-in animation for elements coming from top */
+.slide-in-from-top.from-top {
+  transform: translateY(0) scale(1); /* Slide in from top and restore original size */
+}
+
+/*  */
+.slide-in-from-bottom {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8); /* Initial position with slight scaling */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
 
 
+/* Define slide-in animation for elements coming from bottom */
+.slide-in-from-bottom.from-bottom {
+  transform: translateY(0) scale(1); /* Slide in from bottom and restore original size */
+}
+
+
+.slide-in-from-left {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8); /* Initial position with slight scaling */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
 
 
+/* Define slide-in animation for elements coming from left */
+.slide-in-from-left.from-left {
+  transform: translateX(0) scale(1); /* Slide in from left and restore original size */
+}
 
 
-*/
+
+/*Define slide */
+.slide-in-from-right {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8); /* Initial position with slight scaling */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+/* Define slide-in animation for elements coming from right */
+.slide-in-from-right.from-right {
+  transform: translateX(0) scale(1); /* Slide in from right and restore original size */
+}
+
+
+.slide-in-from-top2 {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8); /* Initial position with slight scaling */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-in-from-top2.from-top {
+  transform: translateX(0) scale(1); /* Slide in from right and restore original size */
+}
+
+
+.slide-in-from-left2 {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8); /* Initial position with slight scaling */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+.slide-in-from-left2.from-right {
+  transform: translateX(0) scale(1); /* Slide in from right and restore original size */
+}
+
