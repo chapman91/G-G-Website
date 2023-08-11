@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /nodemodules/
+Disallow: /.vscode/
+Disallow: /CNAME/
+Disallow: /LICENSE/
+Disallow: /README.md/
+Disallow: /package-lock.json
+Disallow: /package.json
