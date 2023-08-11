@@ -1,0 +1,29 @@
+/* Add your custom CSS styles here */
+.section-title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.sub-title {
+    margin-top: 2rem;
+}
+
+.service-details, .benefits, .cta {
+    margin-bottom: 3rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
