@@ -490,6 +490,12 @@ h1 {
   transition: all 0.5s ease;
 }
 
+.slide-in-from-bottom2.from-bottom2{
+  transform: translateX(0) scale(1);
+  opacity: 1;
+
+}
+
 .slide-in-from-left2.from-bottom2 {
   /* Slide in from right and restore original size */
   transform: translateX(0) scale(1); 
