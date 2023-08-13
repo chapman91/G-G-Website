@@ -367,7 +367,6 @@ h1 {
   color: #7f8c8d;
   font-size: 1.1rem;
   height: 80%;
-
 }
 
 
@@ -378,8 +377,12 @@ h1 {
   background: #111;
   color: #fff;
   text-align: center;
-
 }
+
+.container .map {
+  width: 90%;
+}
+
 
 .container .row .col-md-6 .map {
   width: 45%;
@@ -489,6 +492,7 @@ h1 {
   transform: translateY(50px) scale(0.8);
   transition: all 0.5s ease;
 }
+
 
 .slide-in-from-bottom2.from-bottom2{
   transform: translateX(0) scale(1);

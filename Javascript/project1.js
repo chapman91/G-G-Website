@@ -1,12 +1,3 @@
-// main.js
-document.addEventListener('DOMContentLoaded', function () {
-  // Fetch the content of navbar.html and insert it into the placeholder div
-  fetch('../HTML/navbar.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('navbar-placeholder').innerHTML = html;
-    });
-});
 
 // Changes Yellow words on content section
 const freeQuoteBtn = document.querySelector('.container-fluid .back .button .btn-primary');
