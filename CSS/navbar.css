@@ -2,20 +2,44 @@
 /*---------------------
        NAVBAR
 ---------------------*/
-
+.navbar .navbar-nav .nav-link{
+  font-size: large;
+}
 
 .navbar {
     position: relative;
     width: 100%;
   }
  
-  .navbar-nav .nav-item:hover { 
-    color: rgba(46, 34, 178, 0.2);
+.navbar-nav .nav-item:hover { 
+    color: rgba(4, 39, 236, 0.2);
     font-weight: bolder; 
   }
  
-  .sticky-top {
+.sticky-top {
     position: fixed;
     top: 0;
     z-index: 1000; 
+}
+
+
+.social-icons li.nav-item {
+  display: inline-block; /* Make the list items inline-block */
+  cursor: default; /* Remove the pointer cursor */
+  margin-top: 14px;
+}
+
+
+/* Add this CSS to your existing CSS file, such as "navbar.css" */
+
+/* Apply color change effect to social media icons */
+.social-icons a.nav-link {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #333; /* Initial color */
+  transition: color 0.3s ease; /* Transition for color change */
+}
+
+.social-icons a.nav-link:hover {
+  color: #007bff; /* Color on hover */
 }

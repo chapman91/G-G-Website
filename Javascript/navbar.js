@@ -1,5 +1,6 @@
 // Paste the script that generates the navbar dynamically 
 
+
 // Dynamically generates the navbar on web pages 
 document.addEventListener('DOMContentLoaded', function () {
   // Define a function to handle errors
@@ -25,28 +26,72 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch(handleFetchError); // Catch and handle any errors that occurred during the fetch process
 });
 
+//Navbar links turn bold based on the user's scroll position
 
+ document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section"); //selects all elements by <section> tag in the DOM
+  const navbarLinks = document.querySelectorAll(".navbar-nav a"); 
 
-
-/* sticky or fixed-position navigation bar when the user scrolls down the page */
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Your "navbar.js" code goes here
-
-  // Select element ID 'navbar' in the HTML DOM
-  var navbar = document.getElementById('navbar');
-
-  // Calculates current vertical position
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-  // -----
-  if (scrollPosition >= 100) {
-    navbar.classList.add('sticky');
-  } 
-  else {
-    navbar.classList.remove('sticky');
+  function setActiveLink(index) {
+      navbarLinks.forEach(link => link.classList.remove("active"));
+      navbarLinks[index].classList.add("active");
   }
+
+  window.addEventListener("scroll", function() {
+
+    //store ID of the section in view 
+      let current = "";
+
+    
+      sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100; // Adjust offset as needed
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+              current = section.getAttribute("id");
+          }
+      });
+
+      //Loop through each navbar link to apply the "active" class to the correct link
+      navbarLinks.forEach((link, index) => {
+          link.getAttribute("href") === `#${current}`
+              ? setActiveLink(index)
+              : link.classList.remove("active");
+      });
+  });
 });
+
+
+
+// Navbar link turns bold on user scroll
+
+/*
+const navLinkEls = document.querySelectorAll('.nav-link');
+const navLinkEls = document.querySelectorAll('.section');
+
+
+let currentSection = 'home';
+window.addEventListener('scroll', () => {
+    sectionEls.foreach(sectionEl => {
+        if(window.scrollY >= sectionEl.offsetTop )
+        currentSection = sectionEl.id;
+    })
+
+
+
+    navLinkEls.forEach(navLinkEl => {
+        if (navLinkEl.href.includes(currentSection))
+        navLinkEl.classList.add('active');
+    })
+});
+*/
+
+
+
+
+
+
+
+
 
 
 

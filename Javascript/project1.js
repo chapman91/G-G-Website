@@ -1,9 +1,12 @@
 
+
 // Changes Yellow words on content section
 const freeQuoteBtn = document.querySelector('.container-fluid .back .button .btn-primary');
 freeQuoteBtn.addEventListener('click', function () {
   this.classList.toggle('active');
 });
+
+
 
 // Your JavaScript code
 const nameElement = document.getElementById("name");
