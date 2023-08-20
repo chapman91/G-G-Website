@@ -119,8 +119,11 @@
 
 
   body {
+    flex-direction: flex;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
  /* CONTENT ON BACKGROUND */
@@ -551,26 +554,51 @@ h1 {
 
 }
 
-/* PRE-FOOTER SECTION         */
+/* PRE-FOOTER SECTION */
 
 
 .prefooter-container {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 /* Logo size */
 .pre-footer .logo .img {
-  padding-left: 50px; 
+  padding-left: 100px; 
 }
+
+
+/* Removes bullet points from residential and deckandpatios html file*/
 
 .no-bullets {
   list-style: none;
-  padding-left: 0; /* Optional: Remove the default left padding */
+  padding-left: 0;
 }
 
 .bullet-remove{
-  list-style: none; /* Remove bullet points */
-  padding-left: 0; /* Optionally remove the default left padding 
+  list-style: none; 
+  padding-left: 0;  
+}
+
+
+/* reduce size of the footer trade mark and statement*/
+
+.custom-footer p {
+  /* Your styles for the <p> element go here */
+  color: #555;
+  font-size: 14px;
+}
+
+
+
+/* Style for footer */
+.custom-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative; /* Ensure footer stays at the bottom */
+  bottom: 0; /* Stick the footer to the bottom */
+  width: 100%; /* Occupy full width */
 }
 
 
@@ -583,8 +611,3 @@ h1 {
 
 
 
-
-/* FOOTER SECTION*/
-
-Tasks: 1. Add the logo 
-       2. Make space above pre-footer section equivalent to the section spaces
