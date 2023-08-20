@@ -72,3 +72,20 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
   border-radius: 10px;
 }
+
+.contact-form-container .instructions{
+  margin-bottom: 10px;
+}
+
+.instructions {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+.instructions p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}

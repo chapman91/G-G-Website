@@ -23,3 +23,9 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+.service-page .no-bullets {
+    list-style: none;
+}
+
+ 

@@ -406,11 +406,13 @@ h1 {
 /* CONTACT FORM AND MAP */
 
 .contact .form {
-  width: 90%;
+  width: 70%;
+  
 }
 
 .contact .form h2{
   font-size: 2rem;
+  color:  #03619c;
 }
 
 .contact .form .submit textarea::placeholder {
@@ -421,7 +423,7 @@ h1 {
 
 
 .contact .form .submit a{
-  width: 100%;
+  width: 10%;
   padding: 15px 0;
   text-decoration: none;
   background: #111;
@@ -430,10 +432,12 @@ h1 {
 }
 
 
-.container .row .col-md-6 .map {
+.container .map {
   width: 45%;
   margin-top: 10%;
 }
+
+
 
 
 /* ANIMATION SLIDE IN STYLES */
@@ -559,7 +563,15 @@ h1 {
   padding-left: 50px; 
 }
 
+.no-bullets {
+  list-style: none;
+  padding-left: 0; /* Optional: Remove the default left padding */
+}
 
+.bullet-remove{
+  list-style: none; /* Remove bullet points */
+  padding-left: 0; /* Optionally remove the default left padding 
+}
 
 
 
