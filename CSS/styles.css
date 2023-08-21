@@ -425,13 +425,21 @@ h1 {
 }
 
 
-.contact .form .submit a{
-  width: 10%;
-  padding: 15px 0;
+.container .contact .submit button[type="submit"] {
+  display: inline-block;
+  width: auto;
+  padding: 15px 30px;
   text-decoration: none;
   background: #111;
   color: #fff;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container .contact .submit button[type="submit"]:hover {
+  background-color: #444;
 }
 
 
