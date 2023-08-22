@@ -5,26 +5,17 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar Styles */
-nav {
-    background-color: #333;
+.button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
     color: #fff;
-    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Service Page Styles */
-.service-page {
-    padding: 20px;
+.button-style:hover {
+    background-color: #0056b3;
 }
-
-/* Footer Styles */
-footer {
-    background-color: #ddd;
-    padding: 10px;
-    text-align: center;
-}
-
-.service-page .no-bullets {
-    list-style: none;
-}
-

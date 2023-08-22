@@ -13,9 +13,8 @@ btnPrimary.addEventListener('click', function() {
 });
 
 
-
 // Get a reference to the form and the thank you message div
-const form = document.querySelector('#contact-form');
+const form = document.querySelector('.form');
 const thankYouMessage = document.querySelector('#thank');
 
 // Add a submit event listener to the form
@@ -25,11 +24,23 @@ form.addEventListener('submit', async (e) => {
   // Get the form data
   const formData = new FormData(form);
 
+  // Convert form data to an object
+  const formDataObject = {};
+  formData.forEach((value, key) => {
+    formDataObject[key] = value;
+  });
+
+  // Convert object to JSON format
+  const formDataJSON = JSON.stringify(formDataObject);
+
   // Send a POST request to the server with the form data
   try {
-    const response = await fetch('http://localhost:3000/submit-form', {
+    const response = await fetch('https://submit-form.com/vxI1ClpG', {
       method: 'POST',
-      body: formData,
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: formDataJSON,
     });
 
     // Check if the form was submitted successfully
@@ -44,3 +55,4 @@ form.addEventListener('submit', async (e) => {
     console.error('Error submitting form:', error);
   }
 });
+

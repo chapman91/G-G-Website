@@ -2,6 +2,7 @@
 
 
 // Dynamically generates the navbar on web pages 
+
 document.addEventListener('DOMContentLoaded', function () {
   // Define a function to handle errors
   const handleFetchError = (error) => {

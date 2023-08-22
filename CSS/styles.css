@@ -125,16 +125,15 @@
     flex-direction: column;
     min-height: 100vh;
   }
+/* CONTENT ON BACKGROUND */
 
- /* CONTENT ON BACKGROUND */
- .container-fluid p {
+.container-fluid p {
   font-size: 25px;
- }
+}
 
 .container-fluid h2 {
   font-size: 65px;
 }
-
 
 .custom-container {
   position: absolute;
@@ -175,7 +174,7 @@
   transform: translate(-50%, -50%);
   z-index: 1; /* Ensure the content is above the overlay */
   color: white;
-} 
+}
 
 .container-fluid .button {
   font-size: 45px;
@@ -185,8 +184,8 @@
   font-size: 25px;
 }
 
-.container-fluid .button .btn-primary  {
-  background-color: #0d6efd; 
+.container-fluid .button .btn-primary {
+  background-color: #0d6efd;
 }
 
 .container-fluid .btn-primary {
@@ -204,8 +203,7 @@
   transform: translateY(2px); /* Push the button down on click */
 }
 
-
-/*ANIMATION EFFECT*/
+/* ANIMATION EFFECT */
 
 .name {
   color: white;
@@ -224,6 +222,23 @@
     color: transparent; /* Ending color (black) */
   }
 }
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+  .container-fluid h2 {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+  }
+
+  .container-fluid .button {
+    font-size: 30px; /* Adjust the button font size for smaller screens */
+  }
+
+  .container-fluid .button a {
+    font-size: 18px; /* Adjust the button text font size for smaller screens */
+  }
+}
+
 
 /*CONTACT FORM STYLES */
 
@@ -264,8 +279,33 @@
 
 
 
-/*THE BUSINESS HOURS*/
+/*THE BUSINESS HOURS OR SPLIT-SECTION */
 
+.contact_info .align {
+  margin-bottom: 30px;
+}
+
+.contact_details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 120px;
+}
+
+
+
+/* .contact_details h5 {
+  margin: 0;
+  margin-right: 10px;
+  margin-top: 82px ;
+} */
+
+
+
+
+.section .contact_info {
+  text-align: right;
+}
 
 .section {
 display: flex; 
@@ -289,7 +329,6 @@ flex: 1;
 .section .section_item {
   font-size: medium;
 }
-
 
 
 
@@ -328,6 +367,12 @@ body {
 h1 {
   color: #03619c; /* Ocean blue heading color */
 }
+
+
+.services-section p {
+  font-size: 20px;
+}
+
 
 .card {
   border: 1px solid #03619c; /* Ocean blue border for cards */
@@ -376,6 +421,14 @@ h1 {
   font-size: 30px;
 }
 
+
+
+/* ABOUT US */
+
+.slide-in-from-left2 p {
+  font-size: 20px;
+} 
+
 /* TESTIMONIAL SECTION */
 
    .testimonial-section {
@@ -409,8 +462,7 @@ h1 {
 /* CONTACT FORM AND MAP */
 
 .contact .form {
-  width: 70%;
-  
+  width: 70%; 
 }
 
 .contact .form h2{

@@ -13,6 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
@@ -26,7 +30,7 @@
       BACKGROUND
   ------------------->
   <section class="container-fluid slide-in-from-bottom from-bottom" id="bottom">
-    <div class="row">
+    <div class="row align-items-center"> <!-- Use align-items-center to vertically center content -->
       <div class="col">
         <div class="back">
           <img src="../../images/workmanpressurewashing.jpg" alt="Background" width="100%">
@@ -49,34 +53,24 @@
   <!-----------------
     SPLIT SECTION
   ----------------->
-
- <section class="section slide-in-from-left" id="left">
-  <div class="section_item section_item--start">
-    <!-- Contact Information -->
-    <h3>CONTACT US</h3>
-    <div class="contact_info">
-      <!-- Phone Call -->
-      <div class="contact_option">
-        <div class="contact_icon">
-          <i class="fas fa-phone"></i>
-        </div>
-        <div class="contact_details">
-          <h5>Call Us:</h5>
-          <a href="tel:+1234567890">(123) 456-7890</a>
-        </div>
+  <section class="section slide-in-from-left" id="left">
+    <div class="section_item section_item--start">
+      <!-- Contact Information -->
+      <div class="contact_info">
+          <!-- Phone Call -->
+          <h3 class="align">CONTACT US</h3>
+          <div class="contact_details">
+              <h5><i class="fas fa-phone"></i> Call Us:</h5>
+              <a class="phone_link" href="tel:+2054215955"> (205) 421-5955</a>
+          </div>
+          <!-- WhatsApp -->
+          <div class="contact_details">
+              <h5><i class="fab fa-whatsapp"></i> WhatsApp:</h5>
+              <a class="whatsapp_link" href="https://wa.me/1234567890"> Message Us</a>
+          </div>
       </div>
-      <!-- WhatsApp -->
-      <div class="contact_option">
-        <div class="contact_icon">
-          <i class="fab fa-whatsapp"></i>
-        </div>
-        <div class="contact_details">
-          <h5>WhatsApp:</h5>
-          <a href="https://wa.me/1234567890">Message Us</a>
-        </div>
-      </div>
-    </div>
   </div>
+  
 
   <div class="section_item section_item--end">
     <!-- Working Hours -->
@@ -208,13 +202,13 @@
       <div class="col-md-6">
         <!-- Your contact form code goes here -->
         <div class="contact">
-          <div action="https://submit-form.com/your-form-id" class="form" >
+          <div action="https://submit-form.com/vxI1ClpG" class="form" >
             <h1> Feel free to ask anything</h1>
             <div class="submit">
-              <input type="text" name="" placeholder="Name"  required="">
-              <input type="email" name="" placeholder="Email"  required="">
-              <textarea placeholder="Message"></textarea>
-              <button type="submit">Send Message</button>
+              <input type="text" name="" placeholder="Name"  required="" />
+              <input type="email" name="" placeholder="Email"  required="" />
+              <textarea placeholder="Message" required=""></textarea>
+              <button type="submit"class="btn" >Send Message</button>
             </div>
           </div>
         </div>
@@ -259,7 +253,7 @@
             <div class="col-md-4 mx-auto text-center">
                 <div class="contact">
                     <!-- Contact content -->
-                    <p>Email: gngpressurewashingllc1@gmail.com<br>Phone: (205) 421-5955</p>
+                    <p href="gngpressurewashllc1@gmail.com">Email: gngpressurewashingllc1@gmail.com<br>Phone: (205) 421-5955</p>
                 </div>
             </div>
         </div>

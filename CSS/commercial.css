@@ -1,4 +1,12 @@
 /* Add your custom CSS styles here */
+
+
+
+.content-section {
+    margin-top: 100px;
+}
+
+
 .section-title {
     text-align: center;
     margin-top: 2rem;
@@ -27,3 +35,4 @@
     background-color: #0056b3;
     border-color: #0056b3;
 }
+
