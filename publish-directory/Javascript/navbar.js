@@ -1,6 +1,3 @@
-// Paste the script that generates the navbar dynamically 
-
-
 // Dynamically generates the navbar on web pages 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -10,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // Fetch the content of navbar.html and insert it into the placeholder div
-  fetch('../HTML/navbar.html')
+  fetch('/publish-directory/HTML/navbar.html')
     .then(response => {
       // Check if the response status is not OK (not in the 200-299 range)
       if (!response.ok) {
@@ -26,6 +23,26 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .catch(handleFetchError); // Catch and handle any errors that occurred during the fetch process
 });
+
+
+//Under what condition would this code execute 
+
+// Wait for the document to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Determine the base path
+  const basePath = window.location.href.split('/').slice(0, -1).join('/');
+
+  // Generate the image path
+  const imagePath = `${basePath}/publish-directory/images/bzzcsbvn.jpg`;
+
+  // Create an image element
+  const navbarImage = document.getElementById('logoImage');
+  navbarImage.src = imagePath;
+});
+
+
+
+
 
 //Navbar links turn bold based on the user's scroll position
 
@@ -63,41 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Navbar link turns bold on user scroll
-
-/*
-const navLinkEls = document.querySelectorAll('.nav-link');
-const navLinkEls = document.querySelectorAll('.section');
-
-
-let currentSection = 'home';
-window.addEventListener('scroll', () => {
-    sectionEls.foreach(sectionEl => {
-        if(window.scrollY >= sectionEl.offsetTop )
-        currentSection = sectionEl.id;
-    })
-
-
-
-    navLinkEls.forEach(navLinkEl => {
-        if (navLinkEl.href.includes(currentSection))
-        navLinkEl.classList.add('active');
-    })
-});
-*/
 
 
 
 
-
-
-
-
-
-
-
-// What is the aim of your code?
-
-// Where is the navbar element located in navbar.html?
-
-// 

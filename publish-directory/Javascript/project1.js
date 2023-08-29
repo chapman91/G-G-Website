@@ -1,12 +1,8 @@
-
-
 // Changes Yellow words on content section
 const freeQuoteBtn = document.querySelector('.container-fluid .back .button .btn-primary');
 freeQuoteBtn.addEventListener('click', function () {
   this.classList.toggle('active');
 });
-
-
 
 // Your JavaScript code
 const nameElement = document.getElementById("name");
@@ -24,7 +20,6 @@ function changeNameAndColor() {
 setInterval(changeNameAndColor, 3000); // Change the name and color every 3 seconds
 
 // Select the elements with the unique "slide-in" class names
-// qxeenolight was here :p -->added and changed ids to selector list below
 const elements = document.querySelectorAll('#top, #bottom, #bottom2, #left, #right, #left2');
 
 // Function to check if an element is in the viewport
