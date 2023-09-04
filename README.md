@@ -6,51 +6,51 @@ From the inception of buidling this project to it's completion. Listed below are
 
 ### 1. Front-End Development:
 
-HTML
-CSS
-JavaScript
-Responsive Design
-Bootstrap
+- HTML
+- CSS
+- JavaScript
+- Responsive Design
+- Bootstrap
 
 ### 2. Back-End Development and Hosting:
 
-Node.js
-Apache
-Web Hosting
-Server Management
-Domain Management
-FTP or SSH
-Familiarity with Netlify
-Continuous Integration/Continuous Deployment (CI/CD)
+- Node.js
+- Apache
+- Web Hosting
+- Server Management
+- Domain Management
+- FTP or SSH
+- Familiarity with Netlify
+- Continuous Integration/Continuous Deployment (CI/CD)
 
 ### 3. Version Control and Collaboration:
 
-Git
-GitHub
+- Git
+- GitHub
 
 ### 4. Development Tools:
 
-Bash
-Debugging
-Testing
-Minifying Project
+- Bash
+- Debugging
+- Testing
+- Minifying Project
 
 ### 5. User Experience (UX) and User Interface (UI) Design:
 
-UX/UI Design
-Content Creation
-Logo Design
+- UX/UI Design
+- Content Creation
+- Logo Design
 
 ### 6. Problem-Solving and Troubleshooting:
 
-Improved Problem-Solving Skills
-Troubleshooting Skills
-Security Practices
+- Improved Problem-Solving Skills
+- Troubleshooting Skills
+- Security Practices
 
 ### 7. Performance Optimization:
 
-Performance Optimization
-SSL/TLS Certificate
+- Performance Optimization
+- SSL/TLS Certificate
 
 ### 8. Scaling and Recovery:
 
@@ -59,8 +59,8 @@ Backup and Recovery
 
 ### 9. Client Interaction and Business Skills:
 
-Client Interaction
-Monitoring and Analytics
+- Client Interaction
+- Monitoring and Analytics
 
 ### Project Management:  
 
@@ -82,29 +82,28 @@ Indirectly, I benefited from the advice and guidance of a senior JavaScript deve
 
 ### Lesson Learned: 
 
-Commit More Often: Frequent commits help you keep track of changes and monitor your progress throughout the project's lifecycle.
+1. Commit More Often: Frequent commits help you keep track of changes and monitor your progress throughout the project's lifecycle.
 
-Clear Commit Messages: Writing clear and concise commit messages is essential for understanding the purpose and context of changes.
-
+2. Clear Commit Messages: Writing clear and concise commit messages is essential for understanding the purpose and context of changes.
 Document Problems: Documenting issues and challenges you encounter during the project aids in troubleshooting and learning from mistakes.
 
-Community Engagement: Building relationships in web development communities can provide valuable support and assistance when faced with challenges.
+3. Community Engagement: Building relationships in web development communities can provide valuable support and assistance when faced with challenges.
 
-Effective Questioning: Phrase questions clearly and concisely so that anyone, including your future self, can understand them and provide assistance.
+4. Effective Questioning: Phrase questions clearly and concisely so that anyone, including your future self, can understand them and provide assistance.
 
-Avoid Rushing: Don't rush through important tasks; focus on doing them correctly the first time.
+5. Avoid Rushing: Don't rush through important tasks; focus on doing them correctly the first time.
 
-Workflow Organization: Organizing your workflow, using different software tools effectively, and maintaining clean code and directory structures contribute to project efficiency.
+6. Workflow Organization: Organizing your workflow, using different software tools effectively, and maintaining clean code and directory structures contribute to project efficiency.
 
-Task Difficulty Assessment: Accurately gauging the difficulty of different tasks and estimating their time requirements is crucial for project planning.
+7. Task Difficulty Assessment: Accurately gauging the difficulty of different tasks and estimating their time requirements is crucial for project planning.
 
-Importance of Planning: Planning before starting a project provides a clear roadmap and minimizes frustration.
+8. Importance of Planning: Planning before starting a project provides a clear roadmap and minimizes frustration.
 
-Hands-On Learning: Practical, hands-on learning by building real projects is an effective way to acquire skills and knowledge.
+9. Hands-On Learning: Practical, hands-on learning by building real projects is an effective way to acquire skills and knowledge.
 
-Project Planning: Implementing structured project planning is a valuable practice for future projects.
+10. Project Planning: Implementing structured project planning is a valuable practice for future projects.
 
-Persistence: Overcoming fear and persisting in your learning journey is key to achieving your goals.
+11. Persistence: Overcoming fear and persisting in your learning journey is key to achieving your goals.
 
 ### Personal growth and achievements:
 
