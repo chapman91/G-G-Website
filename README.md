@@ -2,7 +2,7 @@
 
 ## Skill Acquisition
 
-From the inception of project to it's completion. Listed below are the skills improved and the new ones learned. 
+From the inception of buidling this project to it's completion. Listed below are the skills improved and the new ones learned. 
 
 ### 1. Front-End Development:
 
