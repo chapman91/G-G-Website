@@ -54,8 +54,8 @@ From the inception of buidling this project to it's completion. Listed below are
 
 ### 8. Scaling and Recovery:
 
-Scaling Strategies
-Backup and Recovery
+- Scaling Strategies
+- Backup and Recovery
 
 ### 9. Client Interaction and Business Skills:
 
