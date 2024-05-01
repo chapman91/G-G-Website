@@ -281,15 +281,9 @@
 
 /*THE BUSINESS HOURS OR SPLIT-SECTION */
 
-.contact_info .align {
-  margin-bottom: 30px;
-}
 
 .contact_details {
   display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-left: 120px;
 }
 
 
@@ -303,9 +297,7 @@
 
 
 
-.section .contact_info {
-  text-align: right;
-}
+
 
 .section {
 display: flex; 
@@ -544,6 +536,8 @@ h1 {
   /* Initial position with slight scaling */
   transform: translateY(50px) scale(0.8); 
   transition: all 0.5s ease;
+  border: 1px solid #000000;
+  border-radius: 3px;
 }
 
 /* Define slide-in animation for elements coming from left */
@@ -614,59 +608,74 @@ h1 {
 
 }
 
-/* PRE-FOOTER SECTION */
+/* Footer Section */
 
-
-.prefooter-container {
-  margin-top: 50px;
+.section-subscribe {
+  padding:  5em 0;
 }
 
-/* Logo size */
-.pre-footer .logo .img {
-  padding-left: 100px; 
+.form-control {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  height: 50px;
 }
 
-
-/* Removes bullet points from residential and deckandpatios html file*/
-
-.no-bullets {
-  list-style: none;
-  padding-left: 0;
-}
-
-.bullet-remove{
-  list-style: none; 
-  padding-left: 0;  
-}
-
-
-/* reduce size of the footer trade mark and statement*/
-
-.custom-footer p {
-  /* Your styles for the <p> element go here */
-  color: #555;
+.site-footer {
+  padding: 5em 0;
+  background: #0d6efd;
   font-size: 14px;
+  color: white;
 }
 
 
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
 
-/* Style for footer */
-.custom-footer {
-  background-color: #333;
+.site-footer a {
+  color: #ffc107;
+  border-bottom: 1px solid transparent;
   color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  position: relative; /* Ensure footer stays at the bottom */
-  bottom: 0; /* Stick the footer to the bottom */
-  width: 100%; /* Occupy full width */
 }
 
+.site-footer a:hover {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0, 0.2);
+}
 
+.site-footer h2 {
+  font-size: 22px;
+  margin-bottom: 28px;
+  letter-spacing: .05rem;
+  color: #fff;
+}
 
+.site-footer .footer-link li {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
 
+.footer-social a {
+  line-height: 0;
+  border-radius: 50%;
+  margin: 0 5px 5px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  display: inline-block;
+}
 
+.footer-social a:hover {
+  background: #fff;
+  border-color: white;
+  color: black;
+}
 
-
+.footer-social .fa {
+  margin-top: 7px;
+}
 
 
 

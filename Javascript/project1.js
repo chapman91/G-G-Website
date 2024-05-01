@@ -94,3 +94,21 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 ;
 
+
+const form = document.getElementById('contact-form');
+const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  // Simulate form submission
+  console.log('Form submitted!');
+
+  // Show success message modal
+  successModal.show();
+
+  // Clear form after short delay
+  setTimeout(() => {
+    form.reset();
+  }, 2000);
+});
